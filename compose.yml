@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=cs425-swe-202508-srm-db'
+      - 'MYSQL_PASSWORD=test1234'
+      - 'MYSQL_ROOT_PASSWORD=test1234'
+      - 'MYSQL_USER=cs425-swe-202508-srm-db-sys'
+    ports:
+      - '3307:3306'
